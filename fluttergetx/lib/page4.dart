@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'compartidos.dart';
 
 class Page4 extends StatelessWidget {
-  var punt = Get.put(Controller());
+  var punt = Get.put(Numeros());
   @override
   Widget build(BuildContext context) {
     return Scaffold(

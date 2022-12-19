@@ -7,7 +7,7 @@ import 'compartidos.dart';
 
 class Page2 extends StatelessWidget {
   @override
-  var recibido = Get.put(Controller());
+  var recibido = Get.put(Numeros());
 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,6 +48,10 @@ class Page2 extends StatelessWidget {
                 onTap: () {
                   if (recibido.cantidad >= 50) {
                     Get.to(Page4());
+                  }
+                  else
+                  {
+                    Get.snackbar("Aviso", "no tienes los puntos necesarios", backgroundColor: Colors.white);
                   }
                 },
               ),

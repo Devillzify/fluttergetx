@@ -6,13 +6,12 @@ import 'package:get/get.dart';
 import 'compartidos.dart';
 
 void main() {
-  Get.put(Controller());
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
-  var comprobar = Get.put(Controller());
+  var comprobar = Get.put(Numeros());
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +53,7 @@ class MyApp extends StatelessWidget {
               Container(
                   height: 100,
                   width: double.infinity,
-                  child: GetBuilder<Controller>(
+                  child: GetBuilder<Numeros>(
                     builder: (controller) {
                       return Center(
                           child: Text(
@@ -74,10 +73,10 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
-                  Get.find<Controller>().incrementar();
+                 comprobar.incrementar();
                 },
                 onLongPress: () {
-                  Get.find<Controller>().reiniciar();
+                  comprobar.reiniciar();
                 },
               ),
               InkWell(
