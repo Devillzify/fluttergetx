@@ -20,15 +20,22 @@ class Page3 extends StatelessWidget {
                 width: double.infinity,
                 height: 400,
                 child: Image.network(
-                    "https://aniyuki.com/wp-content/uploads/2022/03/aniyuki-pokemon-25.gif"),
+                    "https://media.tenor.com/Q3aAPnznYggAAAAd/katarina.gif"),
               ),
               Text(
-                "Has encontrado al Pikachu de los 25 clicks",
+                "Katarina unlocked",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
               Text(
                 "Llevas un total de ${cant.cantidad} puntos",
                 style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+              IconButton(
+                onPressed: () {
+                  cant.reiniciar();
+                },
+                icon: Icon(Icons.offline_bolt),
+                color: Colors.white,
               )
             ],
           ),

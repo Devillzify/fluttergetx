@@ -20,14 +20,21 @@ class Page4 extends StatelessWidget {
                   height: 300,
                   width: double.infinity,
                   child: Image.network(
-                      "https://media.tenor.com/jWRFHjiNdkgAAAAd/anime-dance.gif")),
+                      "https://i.ibb.co/yk0cXWK/Shaco-Estrella-Oscura-GIF.gif")),
               Text(
-                "La waifu bailona de los 50 puntos",
+                "Shaco unlocked",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
               Text(
                 "llevas un total de ${punt.cantidad}",
                 style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+              IconButton(
+                onPressed: () {
+                  punt.reiniciar();
+                },
+                icon: Icon(Icons.offline_bolt),
+                color: Colors.white,
               )
             ],
           )),
