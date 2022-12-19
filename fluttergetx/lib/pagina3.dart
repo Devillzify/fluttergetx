@@ -33,6 +33,7 @@ class Page3 extends StatelessWidget {
               IconButton(
                 onPressed: () {
                   cant.reiniciar();
+                  Get.back();
                 },
                 icon: Icon(Icons.offline_bolt),
                 color: Colors.white,

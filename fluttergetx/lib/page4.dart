@@ -32,6 +32,7 @@ class Page4 extends StatelessWidget {
               IconButton(
                 onPressed: () {
                   punt.reiniciar();
+                     Get.back();
                 },
                 icon: Icon(Icons.offline_bolt),
                 color: Colors.white,
