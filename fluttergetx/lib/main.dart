@@ -57,7 +57,7 @@ class MyApp extends StatelessWidget {
                     builder: (controller) {
                       return Center(
                           child: Text(
-                        "Cantidad: ${controller.cantidad}",
+                        "Cantidad: ${comprobar.cantidad}",
                         style: TextStyle(
                             color: Color.fromARGB(255, 88, 236, 255),
                             fontSize: 25),
@@ -88,7 +88,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 onTap: () {
-                  Get.to(Page2());
+                  Get.to(() => Page2());
                 },
               ),
             ],

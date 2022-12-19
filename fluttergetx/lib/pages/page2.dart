@@ -29,7 +29,7 @@ class Page2 extends StatelessWidget {
                 ),
                 onTap: () {
                   if (recibido.cantidad >= 25) {
-                    Get.to(Page3());
+                        Get.to(() => Page3());
                   }
                    else
                   {
@@ -51,7 +51,7 @@ class Page2 extends StatelessWidget {
                 ),
                 onTap: () {
                   if (recibido.cantidad >= 50) {
-                    Get.to(Page4());
+                        Get.to(() => Page4());
                   }
                   else
                   {
