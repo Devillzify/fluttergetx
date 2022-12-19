@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:fluttergetx/page4.dart';
-import 'package:fluttergetx/pagina3.dart';
+import 'package:fluttergetx/pages/page4.dart';
+import 'package:fluttergetx/pages/pagina3.dart';
 import 'package:get/get.dart';
 
-import 'compartidos.dart';
+import '../controller_get_x/compartidos.dart';
 
 class Page2 extends StatelessWidget {
   @override

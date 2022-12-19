@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttergetx/page2.dart';
+import 'package:fluttergetx/pages/page2.dart';
 import 'package:get/get.dart';
 
-import 'compartidos.dart';
+import 'controller_get_x/compartidos.dart';
 
 void main() {
   runApp(MyApp());

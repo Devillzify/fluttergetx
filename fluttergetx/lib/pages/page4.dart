@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'compartidos.dart';
+import '../controller_get_x/compartidos.dart';
 
 class Page4 extends StatelessWidget {
   var punt = Get.put(Numeros());
